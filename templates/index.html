@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Fare Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>✈ Flight Fare Prediction</h1>
+
+    <form id="fareForm">
+
+        <label>Airline</label>
+        <select id="Airline">
+            <option>IndiGo</option>
+            <option>Air India</option>
+            <option>GoAir</option>
+            <option>Jet Airways</option>
+            <option>Jet Airways Business</option>
+            <option>Multiple carriers</option>
+            <option>Multiple carriers Premium economy</option>
+            <option>SpiceJet</option>
+            <option>Trujet</option>
+            <option>Vistara</option>
+            <option>Vistara Premium economy</option>
+        </select>
+
+        <label>Source</label>
+        <select id="Source">
+            <option>Delhi</option>
+            <option>Kolkata</option>
+            <option>Mumbai</option>
+            <option>Chennai</option>
+        </select>
+
+        <label>Destination</label>
+        <select id="Destination">
+            <option>Cochin</option>
+            <option>Delhi</option>
+            <option>Hyderabad</option>
+            <option>Kolkata</option>
+            <option>New Delhi</option>
+        </select>
+
+        <label>Total Stops</label>
+        <input type="number" id="Total_Stops" min="0">
+
+        <label>Journey Day</label>
+        <input type="number" id="Journey_day">
+
+        <label>Journey Month</label>
+        <input type="number" id="Journey_month">
+
+        <label>Departure Hour</label>
+        <input type="number" id="Dep_hour">
+
+        <label>Departure Minute</label>
+        <input type="number" id="Dep_min">
+
+        <label>Arrival Hour</label>
+        <input type="number" id="Arrival_hour">
+
+        <label>Arrival Minute</label>
+        <input type="number" id="Arrival_min">
+
+        <label>Duration Hours</label>
+        <input type="number" id="Duration_hours">
+
+        <label>Duration Minutes</label>
+        <input type="number" id="Duration_mins">
+
+        <button type="submit">Predict Fare</button>
+
+    </form>
+
+    <h2 id="result"></h2>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
