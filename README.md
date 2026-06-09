@@ -136,8 +136,9 @@ pip install -r requirements.txt
 
 
 
-\---
-
+\## Project screenshot
+   
+![alt text](screenshot.png.png)
 
 
 \## 👨‍💻 Author
